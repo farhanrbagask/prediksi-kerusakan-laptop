@@ -11,8 +11,20 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('data_uji', function (Blueprint $table) {
-            $table->id();
+    Schema::create('data_uji', function (Blueprint $table) {
+            $table->string('id_uji', 10)->primary();
+            $table->enum('layar_blank', ['1', '2']);
+            $table->enum('layar_bergaris', ['1', '2']);
+            $table->enum('auto_restart', ['1', '2']);
+            $table->enum('boot_loop', ['1', '2']);
+            $table->enum('alarm_bios', ['1', '2']);
+            $table->enum('error_disk', ['1', '2']);
+            $table->enum('keyboard_touchpad_mati', ['1', '2']);
+            $table->enum('baterai_cepat_habis', ['1', '2']);
+            $table->enum('overheat', ['1', '2']);
+            $table->enum('hang', ['1', '2']);
+            $table->string('kelas', 255)->nullable();
+            $table->string('hasil_prediksi', 10)->nullable();
             $table->timestamps();
         });
     }
