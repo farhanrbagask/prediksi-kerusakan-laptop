@@ -31,7 +31,11 @@ class DataUji extends Model
     ];
 
     public function hasilPrediksi()
-    {
-        return $this->hasOne(HasilPrediksi::class, 'data_uji_id', 'id_uji');
-    }
+{
+    return $this->hasOne(
+        HasilPrediksi::class,
+        'data_uji_id',
+        'id_uji'
+    );
+}
 }
