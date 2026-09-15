@@ -115,7 +115,7 @@
         .page-title {
             font-size: 24px;
             font-weight: 700;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #2dd4bf 0%, #0d9488 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -143,16 +143,16 @@
         }
 
         .nav-item:hover {
-            background: rgba(102, 126, 234, 0.15);
+            background: rgba(13, 148, 136, 0.15);
             color: #fff;
             transform: translateX(5px);
         }
 
         .nav-item.active {
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%);
-            color: #667eea;
-            border-left: 3px solid #667eea;
-            box-shadow: 0 4px 10px rgba(102, 126, 234, 0.2);
+            background: linear-gradient(135deg, rgba(13, 148, 136, 0.2) 0%, rgba(6, 95, 70, 0.2) 100%);
+            color: #2dd4bf;
+            border-left: 3px solid #0d9488;
+            box-shadow: 0 4px 10px rgba(13, 148, 136, 0.2);
         }
 
         /* Glass Card Effect */
@@ -168,10 +168,10 @@
         }
 
         .glass-card:hover {
-            background: rgba(255, 255, 255, 0.08);
-            border-color: rgba(102, 126, 234, 0.3);
+            background: rgba(255, 255, 255, 0.07);
+            border-color: rgba(13, 148, 136, 0.3);
             transform: translateY(-5px);
-            box-shadow: 0 30px 60px -12px rgba(102, 126, 234, 0.3);
+            box-shadow: 0 30px 60px -12px rgba(13, 148, 136, 0.25);
         }
 
         /* Stat Value */
@@ -195,9 +195,9 @@
         }
 
         .btn-icon:hover {
-            background: rgba(255, 255, 255, 0.1);
-            color: #667eea;
-            border-color: #667eea;
+            background: rgba(13, 148, 136, 0.1);
+            color: #14b8a6;
+            border-color: #0d9488;
             transform: rotate(5deg);
         }
 
