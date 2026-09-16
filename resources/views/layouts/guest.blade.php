@@ -24,7 +24,7 @@
         body {
             min-height: 100vh;
             margin: 0;
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+            background: linear-gradient(160deg, #060d16 0%, #0d1b2a 50%, #060d16 100%);
             position: relative;
             overflow-x: hidden;
         }
@@ -37,7 +37,7 @@
             height: 200%;
             top: -50%;
             left: -50%;
-            background: radial-gradient(circle, rgba(102, 126, 234, 0.1) 0%, transparent 50%);
+            background: radial-gradient(circle, rgba(13, 148, 136, 0.08) 0%, transparent 50%);
             animation: rotate 30s linear infinite;
             z-index: 0;
         }
@@ -66,23 +66,23 @@
 
         .glass-card:hover {
             background: rgba(255, 255, 255, 0.05);
-            border-color: rgba(102, 126, 234, 0.3);
+            border-color: rgba(13, 148, 136, 0.3);
             transform: translateY(-5px);
-            box-shadow: 0 30px 60px -12px rgba(102, 126, 234, 0.3);
+            box-shadow: 0 30px 60px -12px rgba(13, 148, 136, 0.25);
         }
 
         /* Logo Animation */
         .logo-wrapper {
             width: 80px;
             height: 80px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #0d9488 0%, #065f46 100%);
             border-radius: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
             margin: 0 auto 20px;
             animation: pulse 2s infinite;
-            box-shadow: 0 10px 30px -5px rgba(102, 126, 234, 0.5);
+            box-shadow: 0 10px 30px -5px rgba(13, 148, 136, 0.5);
         }
 
         @keyframes pulse {
@@ -90,12 +90,12 @@
             0%,
             100% {
                 transform: scale(1);
-                box-shadow: 0 10px 30px -5px rgba(102, 126, 234, 0.5);
+                box-shadow: 0 10px 30px -5px rgba(13, 148, 136, 0.5);
             }
 
             50% {
                 transform: scale(1.05);
-                box-shadow: 0 20px 40px -5px rgba(102, 126, 234, 0.8);
+                box-shadow: 0 20px 40px -5px rgba(13, 148, 136, 0.8);
             }
         }
 
@@ -113,9 +113,9 @@
 
         .form-input:focus {
             outline: none;
-            border-color: #667eea;
+            border-color: #0d9488;
             background: rgba(255, 255, 255, 0.05);
-            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+            box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.15);
         }
 
         .form-input::placeholder {
@@ -126,7 +126,7 @@
         .btn-primary {
             width: 100%;
             padding: 14px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #0d9488 0%, #065f46 100%);
             border: none;
             border-radius: 12px;
             color: white;
@@ -158,7 +158,7 @@
 
         .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 30px -5px #667eea;
+            box-shadow: 0 10px 30px -5px rgba(13, 148, 136, 0.6);
         }
 
         /* Link Styles */
@@ -171,7 +171,7 @@
         }
 
         .auth-link:hover {
-            color: #667eea;
+            color: #14b8a6;
         }
 
         .auth-link::after {
@@ -181,7 +181,7 @@
             left: 0;
             width: 0;
             height: 1px;
-            background: #667eea;
+            background: #0d9488;
             transition: width 0.3s ease;
         }
 
@@ -222,16 +222,16 @@
         }
 
         ::-webkit-scrollbar-thumb:hover {
-            background: rgba(102, 126, 234, 0.3);
+            background: rgba(13, 148, 136, 0.4);
         }
 
         /* Decorative elements */
         .decor-circle {
             position: fixed;
             border-radius: 50%;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #0d9488 0%, #065f46 100%);
             filter: blur(80px);
-            opacity: 0.2;
+            opacity: 0.15;
             z-index: 0;
         }
 
@@ -247,7 +247,7 @@
             height: 300px;
             bottom: -50px;
             left: -50px;
-            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+            background: linear-gradient(135deg, #065f46 0%, #0d9488 100%);
         }
     </style>
 

@@ -20,7 +20,7 @@
         }
 
         .gradient-bg {
-            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            background: linear-gradient(160deg, #060d16 0%, #0a1628 50%, #0d1b2a 100%);
         }
 
         .glass-card {
@@ -30,13 +30,13 @@
         }
 
         .btn-primary {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #0d9488 0%, #065f46 100%);
             transition: all 0.3s ease;
         }
 
         .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 40px rgba(102, 126, 234, 0.4);
+            box-shadow: 0 10px 40px rgba(13, 148, 136, 0.5);
         }
 
         .btn-secondary {
@@ -142,12 +142,12 @@
     <div class="gradient-bg h-full w-full overflow-auto relative min-h-screen">
 
         <!-- Background Elements -->
-        <div class="glow-circle" style="width: 400px; height: 400px; background: #667eea; top: -100px; left: -100px;">
+        <div class="glow-circle" style="width: 400px; height: 400px; background: #0d9488; top: -100px; left: -100px; opacity: 0.15;">
         </div>
-        <div class="glow-circle" style="width: 300px; height: 300px; background: #764ba2; bottom: -50px; right: -50px;">
+        <div class="glow-circle" style="width: 300px; height: 300px; background: #065f46; bottom: -50px; right: -50px; opacity: 0.15;">
         </div>
         <div class="glow-circle"
-            style="width: 200px; height: 200px; background: #f093fb; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            style="width: 200px; height: 200px; background: #0f766e; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0.1;">
         </div>
 
         <!-- Sparkles -->
@@ -166,7 +166,7 @@
                 <!-- Logo/Icon -->
                 <div class="floating mb-8">
                     <div
-                        class="w-20 h-20 mx-auto rounded-2xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center shadow-lg shadow-purple-500/30">
+                        class="w-20 h-20 mx-auto rounded-2xl flex items-center justify-center shadow-lg" style="background: linear-gradient(135deg, #0d9488 0%, #065f46 100%); box-shadow: 0 12px 35px -5px rgba(13, 148, 136, 0.5);">
                         <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -180,7 +180,7 @@
                 </h1>
 
                 <!-- Subtitle -->
-                <p id="subtitle" class="fade-in fade-in-delay-1 text-xl text-purple-200 font-medium mb-3">
+                <p id="subtitle" class="fade-in fade-in-delay-1 text-xl text-teal-200 font-medium mb-3">
                     Di Analisis Prediksi Kerusakan Laptop Menggunakan Metode Naive Bayes
                 </p>
 
@@ -198,7 +198,7 @@
                 <!-- Footer Text -->
                 <p class="mt-10 text-gray-400 text-sm">
                     Dengan melanjutkan, Anda menyetujui
-                    <a href="#" class="text-purple-300 hover:text-purple-200 underline">Syarat & Ketentuan</a>
+                    <a href="#" class="text-teal-300 hover:text-teal-200 underline">Syarat &amp; Ketentuan</a>
                     kami
                 </p>
             </div>
@@ -213,11 +213,11 @@
             description: 'Mulai perjalanan Anda bersama kami. Daftar sekarang untuk mengakses fitur-fitur menarik yang telah kami siapkan untuk Anda.',
             login_text: 'Masuk',
             register_text: 'Daftar',
-            primary_color: '#667eea',
-            secondary_color: '#764ba2',
+            primary_color: '#0d9488',
+            secondary_color: '#065f46',
             text_color: '#ffffff',
-            bg_color: '#0f0c29',
-            accent_color: '#f093fb'
+            bg_color: '#060d16',
+            accent_color: '#2dd4bf'
         };
 
         // Button interactions

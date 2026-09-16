@@ -27,7 +27,7 @@
 
         body {
             min-height: 100vh;
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+            background: linear-gradient(160deg, #060d16 0%, #0d1b2a 50%, #060d16 100%);
             position: relative;
             overflow-x: hidden;
         }
@@ -40,7 +40,7 @@
             height: 200%;
             top: -50%;
             left: -50%;
-            background: radial-gradient(circle, rgba(102, 126, 234, 0.1) 0%, transparent 50%);
+            background: radial-gradient(circle, rgba(13, 148, 136, 0.08) 0%, transparent 50%);
             animation: rotate 30s linear infinite;
             z-index: 0;
         }
@@ -66,7 +66,7 @@
         /* Sidebar Styles */
         .sidebar {
             width: 280px;
-            background: linear-gradient(180deg, #0f0c29 0%, #302b63 100%);
+            background: linear-gradient(180deg, #060d16 0%, #0a1628 100%);
             border-right: 1px solid rgba(255, 255, 255, 0.1);
             transition: all 0.3s ease;
             min-height: 100vh;
@@ -114,7 +114,7 @@
         .page-title {
             font-size: 24px;
             font-weight: 700;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #2dd4bf 0%, #0d9488 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -142,16 +142,16 @@
         }
 
         .nav-item:hover {
-            background: rgba(102, 126, 234, 0.15);
+            background: rgba(13, 148, 136, 0.15);
             color: #fff;
             transform: translateX(5px);
         }
 
         .nav-item.active {
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%);
-            color: #667eea;
-            border-left: 3px solid #667eea;
-            box-shadow: 0 4px 10px rgba(102, 126, 234, 0.2);
+            background: linear-gradient(135deg, rgba(13, 148, 136, 0.2) 0%, rgba(6, 95, 70, 0.2) 100%);
+            color: #2dd4bf;
+            border-left: 3px solid #0d9488;
+            box-shadow: 0 4px 10px rgba(13, 148, 136, 0.2);
         }
 
         /* Glass Card Effect */
@@ -167,10 +167,10 @@
         }
 
         .glass-card:hover {
-            background: rgba(255, 255, 255, 0.08);
-            border-color: rgba(102, 126, 234, 0.3);
+            background: rgba(255, 255, 255, 0.07);
+            border-color: rgba(13, 148, 136, 0.3);
             transform: translateY(-5px);
-            box-shadow: 0 30px 60px -12px rgba(102, 126, 234, 0.3);
+            box-shadow: 0 30px 60px -12px rgba(13, 148, 136, 0.25);
         }
 
         /* Stat Value */
@@ -194,9 +194,9 @@
         }
 
         .btn-icon:hover {
-            background: rgba(255, 255, 255, 0.1);
-            color: #667eea;
-            border-color: #667eea;
+            background: rgba(13, 148, 136, 0.1);
+            color: #14b8a6;
+            border-color: #0d9488;
             transform: rotate(5deg);
         }
 
@@ -285,7 +285,7 @@
         }
 
         ::-webkit-scrollbar-thumb:hover {
-            background: rgba(102, 126, 234, 0.3);
+            background: rgba(13, 148, 136, 0.4);
         }
 
         /* Grid System */
@@ -818,7 +818,7 @@
             <div class="p-6 border-b border-gray-700/50">
                 <div class="flex items-center gap-3">
                     <div
-                        class="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center shadow-lg">
+                        class="w-12 h-12 rounded-xl bg-gradient-to-br from-teal-500 to-teal-700 flex items-center justify-center shadow-lg" style="background: linear-gradient(135deg, #0d9488 0%, #065f46 100%); box-shadow: 0 8px 25px -5px rgba(13, 148, 136, 0.5);">
                         <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M13 10V3L4 14h7v7l9-11h-7z" />
