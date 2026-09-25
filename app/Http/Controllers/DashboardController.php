@@ -5,14 +5,14 @@ namespace App\Http\Controllers;
 use App\Models\DataLatih;
 use App\Models\DataUji;
 use App\Models\HasilPrediksi;
-use App\Services\NaiveBayesService;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 class DashboardController extends Controller
 {
-    protected NaiveBayesService $naiveBayesService;
+    protected $naiveBayesService;
 
-    public function __construct(NaiveBayesService $naiveBayesService)
+    public function __construct(\App\Services\NaiveBayesService $naiveBayesService)
     {
         $this->naiveBayesService = $naiveBayesService;
     }
@@ -29,28 +29,19 @@ class DashboardController extends Controller
             ->take(5)
             ->get();
 
-        $statistikKelas = DataLatih::select(
-            'kelas',
-            DB::raw('count(*) as total')
-        )
+        $statistikKelas = DataLatih::select('kelas', DB::raw('count(*) as total'))
             ->groupBy('kelas')
             ->get();
 
         // Get counts for actual labels in data_uji (Test Data)
-        $aktualUji = DataUji::select(
-            'kelas',
-            DB::raw('count(*) as total')
-        )
+        $aktualUji = DataUji::select('kelas', DB::raw('count(*) as total'))
             ->whereNotNull('kelas')
             ->groupBy('kelas')
             ->pluck('total', 'kelas')
             ->toArray();
 
         // Get counts for predicted labels in data_uji (Test Data)
-        $prediksiUji = DataUji::select(
-            'hasil_prediksi',
-            DB::raw('count(*) as total')
-        )
+        $prediksiUji = DataUji::select('hasil_prediksi', DB::raw('count(*) as total'))
             ->whereNotNull('hasil_prediksi')
             ->groupBy('hasil_prediksi')
             ->pluck('total', 'hasil_prediksi')
@@ -58,13 +49,7 @@ class DashboardController extends Controller
 
         $chartData = [
             'labels' => ['K1', 'K2', 'K3', 'K4', 'K5'],
-            'nama_labels' => [
-                'RAM/Memori',
-                'Hard Disk/SSD',
-                'LCD/Layar',
-                'Sistem Operasi',
-                'Overheating/Thermal'
-            ],
+            'nama_labels' => ['RAM/Memori', 'Hard Disk/SSD', 'LCD/Layar', 'Sistem Operasi', 'Overheating/Thermal'],
             'aktual' => [],
             'prediksi' => []
         ];
