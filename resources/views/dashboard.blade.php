@@ -67,7 +67,7 @@
         /* Sidebar Styles */
         .sidebar {
             width: 280px;
-            background: linear-gradient(180deg, #0f0c29 0%, #302b63 100%);
+            background: linear-gradient(180deg, #0f0c29 0%, #0b0741 100%);
             border-right: 1px solid rgba(255, 255, 255, 0.1);
             transition: all 0.3s ease;
             min-height: 100vh;
