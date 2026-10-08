@@ -11,7 +11,11 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware): void {
-        //
+         // Tambahkan ini untuk mengunci arah redirect sistem Laravel 11
+        $middleware->redirectTo(
+            guests: '/login',
+            users: '/dashboard'
+        );
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         //
